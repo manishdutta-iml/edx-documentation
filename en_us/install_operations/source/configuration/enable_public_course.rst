@@ -39,10 +39,6 @@ courses and boost enrollments for genuinely interested learners.
 Enable Public Course Content in the Admin
 *****************************************
 
-.. Note::
-  Before proceeding, review :ref:`Guidelines for Updating the Open edX
-  Platform`.
-
 The public course content feature is enabled in the Django LMS Admin with the 
 **seo.enable_anonymous_courseware_access** waffle flag. You can use this flag 
 in two different ways:
@@ -50,13 +46,13 @@ in two different ways:
 * Create a normal waffle flag to enable this flag for all courses. For more
   information, see the `Waffle documentation`_.
 
-  .. image:: ../Images/public-waffle-flag.png
+  .. image:: ../Images/enable_anonymous_courseware_access.png
          :alt: Setting a waffle flag in the Django LMS Admin.
 
 * Create a **Waffle flag course override** with the ID of a course to enable 
   this flag for just that course.  
 
-  .. image:: ../Images/public-add-flag.png
+  .. image:: ../Images/course_enable_anonymous_courseware_access.png
          :alt: Setting a waffle flag in the Django LMS Admin.
 
 *************************************
@@ -82,7 +78,7 @@ Set Course Content Visibility
    the other course content, will be visible to everyone.
 
    If you change this to ``"public"``, then all of your course content, including
-   the course outline, will be visible to anyone.
+   the course outline, will be visible to everyone.
 
 =================================
 Set Course About Page Visibility
